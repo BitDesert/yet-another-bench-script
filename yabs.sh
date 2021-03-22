@@ -13,11 +13,11 @@
 #             - either compiled or installed - nor admin privileges to run.
 #
 
-echo -e '# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #'
-echo -e '#              Yet-Another-Bench-Script              #'
-echo -e '#                     v2020-12-29                    #'
-echo -e '# https://github.com/masonr/yet-another-bench-script #'
-echo -e '# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #'
+echo -e '# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #'
+echo -e '#         Yet-Another-Bench-Script (BitDesert)          #'
+echo -e '#                     v2020-12-29                       #'
+echo -e '# https://github.com/BitDesert/yet-another-bench-script #'
+echo -e '# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #'
 
 echo -e
 date
@@ -425,7 +425,7 @@ elif [ -z "$SKIP_FIO" ]; then
 		# init global array to store disk performance values
 		declare -a DISK_RESULTS
 		# disk block sizes to evaluate
-		BLOCK_SIZES=( "4k" "64k" "512k" "1m" )
+		BLOCK_SIZES=( "4k" "16k" "32k" "64k" "512k" "1m" )
 
 		# execute disk performance test
 		disk_test "${BLOCK_SIZES[@]}"
