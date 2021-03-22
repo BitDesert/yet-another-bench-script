@@ -26,7 +26,7 @@ This script has been tested on the following Linux distributions: CentOS 6+, Deb
 By default, the script runs all three tests described in the next section below. In the event that you wish to skip one or more of the tests, use the commands below:
 
 ```
-curl -sL yabs.sh | bash -s -- -{fdighr49}
+curl -sL https://raw.githubusercontent.com/BitDesert/yet-another-bench-script/master/yabs.sh | bash -s -- -{fdighr49}
 ```
 
 * `-f`/`-d` this option disables the fio (disk performance) test
@@ -128,14 +128,6 @@ Multi Core      | 5857
 Full Test       | https://browser.geekbench.com/v5/cpu/3844555
 
 ```
-
-## IPv6 Only Machines
-
-GitHub's CDN does not resolve via IPv6. You will need to run the following command to download and run the script.
-
-`curl -s -k -g --header 'Host: raw.githubusercontent.com' "https://[2a04:4e42::133]/masonr/yet-another-bench-script/master/yabs.sh" | bash`
-
-(2a04:4e42::133 is fastly.net's [GitHub's CDN Provider] IPv6 address)
 
 ## Acknowledgements
 
